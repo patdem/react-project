@@ -5,7 +5,7 @@ import {LoginForm} from "../LoginPage/LoginForm";
 import {Cart} from "../CartPage/Cart";
 
 export const NavSwitch = () => {
-  return(
+  return (
     <Switch>
       <Route exact path="/">
         <Welcome/>
