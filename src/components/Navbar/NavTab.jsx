@@ -17,7 +17,7 @@ export const NavTab = () => {
           style={{maxHeight: '100px'}}
           navbarScroll
         >
-          <Nav.Link><Link className="nav-link" to="/product/list">Products</Link></Nav.Link>
+          <Link className="nav-link" to="/product/list">Products</Link>
         </Nav>
         <Button variant="outline-light" style={{marginRight: 10}}><Link to="/cart"><Image src={cart}/></Link></Button>
         <Button variant="outline-light"><Link to="/login">Log in</Link></Button>
