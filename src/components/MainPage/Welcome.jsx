@@ -1,6 +1,6 @@
 function Welcome() {
   return (
-    <div className="Welcome bg-info bg-gradient">
+    <div className="bg-info">
       <h1>Welcome in the shop!</h1>
     </div>
   );
