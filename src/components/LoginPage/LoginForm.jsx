@@ -5,8 +5,8 @@ import {Col, Container, Row} from "react-bootstrap";
 export const LoginForm = () => {
   return (
     <div>
-      <div className="Welcome bg-info">
-        <h1>Log in form!</h1>
+      <div className="bg-info">
+        <h1>Log in</h1>
       </div>
       <Container style={{paddingRight: 300, paddingLeft: 300, paddingTop: 20}}>
         <Form>
