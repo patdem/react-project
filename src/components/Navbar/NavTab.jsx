@@ -35,8 +35,6 @@ export const NavTab = () => {
     }
   }
 
-
-
   return (
     <Navbar className="navbar-dark bg-dark" expand="lg">
       <Navbar.Brand><Link className="nav-link" to="/"><Image src={shop}/></Link></Navbar.Brand>

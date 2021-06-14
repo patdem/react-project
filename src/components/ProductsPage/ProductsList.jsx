@@ -1,11 +1,9 @@
 import React, {useContext} from 'react';
 import Product from "./Product";
 import {ProductContext} from "../../contexts/ProductContext";
-import {CategoryContext} from "../../contexts/CategoryContext";
 
 function ProductsList() {
   let {products} = useContext(ProductContext);
-  let {categories} = useContext(CategoryContext);
 
   return (
     <div>
@@ -15,7 +13,7 @@ function ProductsList() {
           <Product
             name={prod.name}
             description={prod.description}
-            category={categories[prod.category]}
+            category={prod.category}
             key={prod.id}
           />
         ))
