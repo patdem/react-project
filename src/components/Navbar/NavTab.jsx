@@ -6,12 +6,14 @@ import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import cart from "../../img/cart.svg";
 import {useCookies} from "react-cookie";
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
+import {CartContext} from "../../contexts/CartContext";
 
 export const NavTab = () => {
   const [cookies, setCookie, removeCookie] = useCookies(["email"]);
   const [btn, setBtn] = useState("");
   const [link, setLink] = useState("");
+  const context = useContext(CartContext);
 
   useEffect(() => {
     if (cookies.email === undefined) {
@@ -47,7 +49,9 @@ export const NavTab = () => {
         >
           <Link className="nav-link" to="/product/list">Products</Link>
         </Nav>
-        <Button variant="outline-light" style={{marginRight: 10}}><Link to="/cart"><Image src={cart}/></Link></Button>
+        <Button variant="outline-light" style={{marginRight: 10}}><Link to="/cart">({context.cart.reduce((count, curItem) => {
+              return count + curItem.quantity;
+            }, 0)})<Image src={cart}/></Link></Button>
         <Button variant="outline-light" onClick={handleClick}><Link to={link}>{btn}</Link></Button>
       </Navbar.Collapse>
     </Navbar>

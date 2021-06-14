@@ -11,6 +11,7 @@ function ProductsList() {
         <h1>Products</h1>
         {products.map((prod) => (
           <Product
+            id={prod.id}
             name={prod.name}
             description={prod.description}
             category={prod.category}

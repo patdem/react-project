@@ -1,8 +1,8 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import {Col, Container, Row} from "react-bootstrap";
-import {GithubLoginButton} from "react-social-login-buttons";
 import google from "../../img/btn_google.png";
+import github from "../../img/btn_github.png";
 import Image from "react-bootstrap/Image";
 
 export const LoginForm = () => {
@@ -44,11 +44,10 @@ export const LoginForm = () => {
             </a>
           </Row>
           <Row>
-            <GithubLoginButton/>
-            {/*<Button variant="primary" type="submit"*/}
-            {/*        style={{marginLeft: "auto", marginRight: "auto", marginTop: 10, marginBottom: 10}}>*/}
-            {/*  Log in with Github account*/}
-            {/*</Button>*/}
+            <a  style={{marginLeft: "auto", marginRight: "auto", marginTop: 10, marginBottom: 10}}
+                href="http://localhost:9000/authenticate/github" >
+              <Image src={github}/>
+            </a>
           </Row>
         </Form>
       </Container>
