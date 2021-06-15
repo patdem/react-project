@@ -12,7 +12,7 @@ function App() {
         <ProductContextProvider>
           <CategoryContextProvider>
             <CartContextProvider>
-            <BrowserRouterComponent/>
+              <BrowserRouterComponent/>
             </CartContextProvider>
           </CategoryContextProvider>
         </ProductContextProvider>

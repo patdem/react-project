@@ -2,8 +2,8 @@ import {useCookies} from "react-cookie";
 import {useEffect, useState} from "react";
 
 function Welcome() {
-const [cookies] = useCookies(["email"]);
-const [user, setUser] = useState("");
+  const [cookies] = useCookies(["email"]);
+  const [user, setUser] = useState("");
 
   useEffect(() => {
     if (cookies.email === undefined) {

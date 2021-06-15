@@ -1,9 +1,9 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import {Col, Container, Row} from "react-bootstrap";
-import google from "../../img/btn_google.png";
-import github from "../../img/btn_github.png";
-import Image from "react-bootstrap/Image";
+import './social.css';
+import {ReactComponent as GithubLogo} from '../../img/github.svg';
+import {ReactComponent as GoogleLogo} from '../../img/google.svg';
 
 export const LoginForm = () => {
   return (
@@ -38,15 +38,15 @@ export const LoginForm = () => {
             </Col>
           </Row>
           <Row>
-            <a  style={{marginLeft: "auto", marginRight: "auto", marginTop: 10, marginBottom: 10}}
-                href="http://localhost:9000/authenticate/google" >
-              <Image src={google}/>
+            <a href="http://localhost:9000/authenticate/google" className="social google">
+              <GoogleLogo/>
+              <span>Log in with Google</span>
             </a>
           </Row>
           <Row>
-            <a  style={{marginLeft: "auto", marginRight: "auto", marginTop: 10, marginBottom: 10}}
-                href="http://localhost:9000/authenticate/github" >
-              <Image src={github}/>
+            <a href="http://localhost:9000/authenticate/github" className="social github">
+              <GithubLogo/>
+              <span>Log in with GitHub</span>
             </a>
           </Row>
         </Form>

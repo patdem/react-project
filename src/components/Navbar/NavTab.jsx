@@ -51,9 +51,10 @@ export const NavTab = () => {
         >
           <Link className="nav-link" to="/product/list">Products</Link>
         </Nav>
-        <Button variant="outline-light" style={{marginRight: 10}}><Link to="/cart">({context.cart.reduce((count, curItem) => {
-              return count + curItem.quantity;
-            }, 0)})<Image src={cart}/></Link></Button>
+        <Button variant="outline-light" style={{marginRight: 10}}><Link
+          to="/cart">({context.cart.reduce((count, curItem) => {
+          return count + curItem.quantity;
+        }, 0)})<Image src={cart}/></Link></Button>
         <Button variant="outline-light" onClick={handleClick}><Link to={link}>{btn}</Link></Button>
       </Navbar.Collapse>
     </Navbar>

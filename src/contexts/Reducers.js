@@ -8,7 +8,7 @@ const addProductToCart = (product, state) => {
   );
 
   if (updatedItemIndex < 0) {
-    updatedCart.push({ ...product, quantity: 1 });
+    updatedCart.push({...product, quantity: 1});
   } else {
     const updatedItem = {
       ...updatedCart[updatedItemIndex]
@@ -16,7 +16,7 @@ const addProductToCart = (product, state) => {
     updatedItem.quantity++;
     updatedCart[updatedItemIndex] = updatedItem;
   }
-  return { ...state, cart: updatedCart };
+  return {...state, cart: updatedCart};
 };
 
 const removeProductFromCart = (productId, state) => {
@@ -33,7 +33,7 @@ const removeProductFromCart = (productId, state) => {
   } else {
     updatedCart[updatedItemIndex] = updatedItem;
   }
-  return { ...state, cart: updatedCart };
+  return {...state, cart: updatedCart};
 };
 
 export const shopReducer = (state, action) => {
