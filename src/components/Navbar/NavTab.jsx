@@ -28,11 +28,13 @@ export const NavTab = () => {
     e.preventDefault();
     if (btn === "Log in") {
       setLink("/login");
+      setCookie("login", true);
     } else {
       removeCookie("email");
       removeCookie("authenticator");
       removeCookie("csrfToken");
       removeCookie("OAuth2State");
+      removeCookie("login");
       setLink("/");
     }
   }
