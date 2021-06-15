@@ -1,3 +1,9 @@
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=patdem_react-project&metric=bugs)](https://sonarcloud.io/dashboard?id=patdem_react-project)
+
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=patdem_react-project&metric=code_smells)](https://sonarcloud.io/dashboard?id=patdem_react-project)
+
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=patdem_react-project&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=patdem_react-project)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
