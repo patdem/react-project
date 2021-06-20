@@ -4,6 +4,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import './social.css';
 import {ReactComponent as GithubLogo} from '../../img/github.svg';
 import {ReactComponent as GoogleLogo} from '../../img/google.svg';
+import env from "react-dotenv";
 
 export const LoginForm = () => {
   return (
@@ -38,13 +39,13 @@ export const LoginForm = () => {
             </Col>
           </Row>
           <Row>
-            <a href="http://localhost:9000/authenticate/google" className="social google">
+            <a href={env.API_URL + "/authenticate/google"} className="social google">
               <GoogleLogo/>
               <span>Log in with Google</span>
             </a>
           </Row>
           <Row>
-            <a href="http://localhost:9000/authenticate/github" className="social github">
+            <a href={env.API_URL + "/authenticate/github"} className="social github">
               <GithubLogo/>
               <span>Log in with GitHub</span>
             </a>
