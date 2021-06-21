@@ -46,6 +46,8 @@
     "axios": "^0.21.1"
   },
   "react-dotenv": {
-    "whitelist": ["API_URL"]
+    "whitelist": [
+      "API_URL"
+    ]
   }
 }
