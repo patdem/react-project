@@ -31,6 +31,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: littlestshop
-        slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6F45B3E78C374387A2F4BD2C9B13AD86 }}
         package: .
