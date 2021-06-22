@@ -3,7 +3,7 @@ import axios from 'axios';
 class CategoryService {
 
   async getCategories() {
-    return axios.get("http://localhost:9000/api/category/list")
+    return axios.get("https://backshop.azurewebsites.net/api/category/list")
       .then(response => response.data);
   }
 }

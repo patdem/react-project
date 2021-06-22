@@ -3,7 +3,7 @@ import axios from 'axios';
 class ProductService {
 
   async getProducts() {
-    return axios.get("http://localhost:9000/api/product/list")
+    return axios.get("https://backshop.azurewebsites.net/api/product/list")
       .then(response => response.data);
   }
 }
